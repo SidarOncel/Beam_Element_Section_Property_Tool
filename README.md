@@ -96,26 +96,7 @@ Beam_Element_Section_Property_Tool/
 
 ## Team Responsibilities
 
-### Member 1 — Project Manager & Git Coordinator
-
-Responsibilities:
-
-* Repository management
-* Branch management
-* Merge requests
-* Weekly integration
-* Progress tracking
-* Final release preparation
-
-Deliverables:
-
-* Git workflow
-* Integration reports
-* Final project packaging
-
----
-
-### Member 2 — Geometry Module
+### Member 1 — Geometry Module
 
 What to do:
 
@@ -146,7 +127,7 @@ Produce the shape data needed by the GUI preview and computation engine.
 
 ---
 
-### Member 3 — Section Property Calculation Module
+### Member 2 — Section Property Calculation Module
 
 What to do:
 
@@ -178,7 +159,7 @@ Add verification cases for each section type.
 
 ---
 
-### GUI Development
+### Member 3 - GUI Development
 
 What to do:
 
@@ -211,7 +192,7 @@ Handle user actions such as changing section type or editing dimensions.
 
 ---
 
-### Member 5 — Stress Points and FE Mesh Module
+### Member 4 — Stress Points and FE Mesh Module
 
 What to do:
 
@@ -243,7 +224,7 @@ Keep mesh generation independent from the GUI so it can also support the DLL lat
 
 ---
 
-### Member 6 — DLL/API, Examples, Testing, and Documentation
+### Member 5 — DLL/API, Examples, Testing, and Documentation
 
 What to do:
 
