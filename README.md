@@ -256,6 +256,28 @@ Record comparison results against expected values.
 Organize the final documentation folder.
 
 ---
+### Member 6 — Data I/O, Result Export, and Report Formatting
+
+What to do:
+Build the module that handles saving, loading, formatting, and exporting section data. This member should make sure the calculated geometry and property results can be turned into clean output files or text cards that other software or team members can reuse.
+
+Why to do it:
+The project is not only about calculating values. The document also asks for output interfacing, and it specifically says the computed section properties should be exportable as beam section definition cards for FEM software. If the results cannot be stored or exported cleanly, the software becomes harder to use in real workflows.
+
+How to do it:
+Create a shared data structure for section inputs and outputs, then implement functions to convert those results into readable files and formatted text. This member should also handle unit formatting, decimal precision, and consistent naming so exported results always match the required mm-based system. The export code should be independent from the GUI so it can be reused by the DLL, examples, and later extensions.
+
+Detailed tasks:
+
+Define common data structures for section input and output data.
+Implement save/load functions for project parameters.
+Export calculated section properties into structured text files.
+Generate FEM-friendly output formats or definition cards.
+Control number formatting, decimal places, and units.
+Keep export logic reusable by GUI, DLL, and example programs.
+Prepare sample output files for the documentation and demo.
+
+---
 
 ## Git Workflow
 
