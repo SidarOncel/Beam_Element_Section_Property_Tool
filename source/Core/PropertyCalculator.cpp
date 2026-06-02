@@ -1,5 +1,6 @@
 #include "PropertyCalculator.hpp"
 #include <cmath>
+#include <vector>
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
@@ -136,6 +137,125 @@ SectionProperties PropertyCalculator::calculatePipeSectionProperties(const Secti
 
 SectionProperties PropertyCalculator::calculateGirderSectionProperties(const SectionInput& input) {
     SectionProperties props;
-    // TODO: Pending Member 1 geometry definitions (19 parameters) for the Quayside Crane Girder
+
+    // Define the 9 primitive elements of the Quayside Crane Girder
+    // Origin (0,0) is at the intersection of the left web centerline and bottom flange centerline.
+    
+    double sum_A = 0.0;
+    double sum_Ay = 0.0;
+    double sum_Az = 0.0;
+
+    struct Element {
+        double A, cy, cz, Iy, Iz, Iyz;
+    };
+    std::vector<Element> elements;
+
+    auto addRect = [&](double w, double h, double cy, double cz) {
+        double A = w * h;
+        double Iy = (w * h * h * h) / 12.0;
+        double Iz = (h * w * w * w) / 12.0;
+        elements.push_back({A, cy, cz, Iy, Iz, 0.0});
+        sum_A += A;
+        sum_Ay += A * cy;
+        sum_Az += A * cz;
+    };
+
+    auto addInclinedRect = [&](double L, double t, double cy, double cz, double dy, double dz) {
+        double A = L * t;
+        double sin_theta = dz / L;
+        double cos_theta = dy / L;
+        double Iy = (L * L * L * t / 12.0) * sin_theta * sin_theta + (L * t * t * t / 12.0) * cos_theta * cos_theta;
+        double Iz = (L * L * L * t / 12.0) * cos_theta * cos_theta + (L * t * t * t / 12.0) * sin_theta * sin_theta;
+        double Iyz = (L * L * L * t / 12.0) * sin_theta * cos_theta - (L * t * t * t / 12.0) * sin_theta * cos_theta;
+        elements.push_back({A, cy, cz, Iy, Iz, Iyz});
+        sum_A += A;
+        sum_Ay += A * cy;
+        sum_Az += A * cz;
+    };
+
+    // 1. Left Web
+    addRect(input.t, input.H, 0.0, input.H / 2.0);
+
+    // 2. Top Flange
+    addRect(input.B, input.e, input.A / 2.0, input.H); 
+
+    // 3. Bottom Flange
+    addRect(input.D, input.f, input.G / 2.0, 0.0);
+
+    // 4. Right Web (Upper)
+    addRect(input.u, input.H - input.W, input.A, input.W + (input.H - input.W) / 2.0);
+
+    // 5. Right Web (Lower Inclined)
+    double L_inc = std::sqrt(std::pow(input.A - input.G, 2) + std::pow(input.W, 2));
+    addInclinedRect(L_inc, input.u, (input.G + input.A) / 2.0, input.W / 2.0, input.A - input.G, input.W);
+
+    // 6. Internal T-stiffener Horizontal (h)
+    addRect(input.h, input.h1, input.A - input.h / 2.0, input.W);
+
+    // 7. Internal T-stiffener Vertical (k)
+    addRect(input.k1, input.k, input.A - input.h, input.W);
+
+    // 8. External T-stiffener Horizontal (M)
+    double y_N = input.G + (input.A - input.G) * (input.N / input.W);
+    addRect(input.M, input.p, y_N + input.M / 2.0, input.N);
+
+    // 9. External T-stiffener Vertical (s)
+    double y_s = y_N + input.M - input.M1;
+    addRect(input.s, input.N, y_s, input.N / 2.0);
+
+    // Global Centroid
+    props.Area = sum_A;
+    props.cy = sum_Ay / sum_A;
+    props.cz = sum_Az / sum_A;
+
+    // Global Moments of Inertia (Parallel Axis Theorem)
+    props.Jy = 0.0;
+    props.Jz = 0.0;
+    props.Jyz = 0.0;
+
+    for (const auto& el : elements) {
+        double dy = el.cy - props.cy;
+        double dz = el.cz - props.cz;
+        props.Jy += el.Iy + el.A * dz * dz;
+        props.Jz += el.Iz + el.A * dy * dy;
+        props.Jyz += el.Iyz + el.A * dy * dz;
+    }
+
+    // Principal axes moments
+    double avg = (props.Jy + props.Jz) / 2.0;
+    double diff = (props.Jy - props.Jz) / 2.0;
+    double R = std::sqrt(diff * diff + props.Jyz * props.Jyz);
+    props.Jyo = avg + R;
+    props.Jzo = avg - R;
+
+    // Torsional Moment of Inertia (Bredt's + Open Branches)
+    // Enclosed Area Am
+    double Am = input.A * input.H - 0.5 * (input.A - input.G) * input.W;
+    
+    // Line integral ds/t for the closed loop
+    double loop_integral = (input.H / input.t) + (input.A / input.e) + ((input.H - input.W) / input.u) + 
+                           (L_inc / input.u) + (input.G / input.f);
+    
+    double Jx_closed = (4.0 * Am * Am) / loop_integral;
+
+    auto addOpen = [&](double length, double thickness) {
+        return (1.0 / 3.0) * length * thickness * thickness * thickness;
+    };
+    
+    double Jx_open = 0.0;
+    // Overhangs & Stiffeners
+    Jx_open += addOpen((input.B - input.A) / 2.0, input.e) * 2.0; 
+    Jx_open += addOpen((input.D - input.G) / 2.0, input.f) * 2.0; 
+    Jx_open += addOpen(input.h, input.h1);
+    Jx_open += addOpen(input.k, input.k1);
+    Jx_open += addOpen(input.M, input.p);
+    Jx_open += addOpen(input.N, input.s);
+
+    props.Jx = Jx_closed + Jx_open;
+
+    // Shear Areas
+    props.Az = input.H * input.t + (input.H - input.W) * input.u + L_inc * input.u * std::pow(input.W / L_inc, 2);
+    props.Ay = input.B * input.e + input.D * input.f;
+
     return props;
 }

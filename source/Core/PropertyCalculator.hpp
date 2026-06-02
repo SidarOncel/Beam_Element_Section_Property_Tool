@@ -13,6 +13,7 @@ struct SectionProperties {
     // Moments of inertia about Z and Y axes
     double Jz = 0.0;
     double Jy = 0.0;
+    double Jyz = 0.0; // Product of inertia
 
     // Moments of inertia about centroidal principal axes
     double Jzo = 0.0;
