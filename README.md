@@ -96,7 +96,7 @@ Beam_Element_Section_Property_Tool/
 
 ## Team Responsibilities
 
-### Member 1 — Geometry Module
+### Sidar's Part — Geometry Module
 
 What to do:
 
@@ -127,7 +127,7 @@ Produce the shape data needed by the GUI preview and computation engine.
 
 ---
 
-### Member 2 — Section Property Calculation Module
+### Matteo's Part — Section Property Calculation Module
 
 What to do:
 
@@ -159,7 +159,7 @@ Add verification cases for each section type.
 
 ---
 
-### Member 3 - GUI Development
+### Luca's Part - GUI Development
 
 What to do:
 
@@ -192,7 +192,7 @@ Handle user actions such as changing section type or editing dimensions.
 
 ---
 
-### Member 4 — Stress Points and FE Mesh Module
+### Zümra's Part — Stress Points and FE Mesh Module
 
 What to do:
 
@@ -224,7 +224,7 @@ Keep mesh generation independent from the GUI so it can also support the DLL lat
 
 ---
 
-### Member 5 — DLL/API, Examples, Testing, and Documentation
+### 一鸣的 — DLL/API, Examples, Testing, and Documentation
 
 What to do:
 
@@ -256,7 +256,7 @@ Record comparison results against expected values.
 Organize the final documentation folder.
 
 ---
-### Member 6 — Data I/O, Result Export, and Report Formatting
+### Philip's Part — Data I/O, Result Export, and Report Formatting
 
 What to do:
 Build the module that handles saving, loading, formatting, and exporting section data. This member should make sure the calculated geometry and property results can be turned into clean output files or text cards that other software or team members can reuse.
