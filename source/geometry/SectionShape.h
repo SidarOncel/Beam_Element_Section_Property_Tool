@@ -37,11 +37,18 @@ segments, or curved boundaries may be added here.
 
 struct Point2D
 {
-    double y;
-    double z;
+    double y = 0.0;
+    double z = 0.0;
 };
 
 struct SectionShape
 {
     std::vector<Point2D> boundaryPoints;
+
+    // Hollow sections may contain one or more inner boundaries.
+    // Each inner boundary is represented as a closed polygon of points.
+    std::vector<std::vector<Point2D>> holes;
+
+    // Indicates whether the returned boundary points are already closed.
+    bool isClosed = false;
 };

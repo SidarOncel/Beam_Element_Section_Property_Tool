@@ -39,14 +39,20 @@ Unused fields may remain zero.
 
 struct SectionInput
 {
-    SectionType type;
+    SectionType type = SectionType::HSection;
 
+    // Common dimensions
     double width = 0.0;
     double height = 0.0;
 
+    // H-section specific
     double flangeThickness = 0.0;
     double webThickness = 0.0;
 
-    double wallThickness = 0.0;
+    // Pipe specific
     double diameter = 0.0;
+    double wallThickness = 0.0;
+
+    // Optional general-purpose value for future extensions
+    double extra = 0.0;
 };

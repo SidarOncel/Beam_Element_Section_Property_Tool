@@ -34,9 +34,14 @@ functions defined below.
 class SectionBase
 {
 public:
+    explicit SectionBase(const SectionInput& input) : m_input(input) {}
     virtual ~SectionBase() = default;
 
-    virtual bool validate(std::string& error) const = 0;
-
+    virtual bool validate(std::string& errorMessage) const = 0;
     virtual SectionShape generateShape() const = 0;
+
+    const SectionInput& input() const { return m_input; }
+
+protected:
+    SectionInput m_input;
 };

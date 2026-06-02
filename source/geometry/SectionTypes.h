@@ -59,12 +59,15 @@ enum class SectionType
     PipeSection,
     GirderSection
 };
-===============================================================================
 
-enum class SectionType
+inline const char* toString(SectionType type)
 {
-    HSection,
-    BoxSection,
-    PipeSection,
-    GirderSection
-};
+    switch (type)
+    {
+    case SectionType::HSection:   return "H Section";
+    case SectionType::BoxSection:  return "Box Section";
+    case SectionType::PipeSection: return "Pipe Section";
+    case SectionType::GirderSection: return "Girder Section";
+    default:                       return "Unknown";
+    }
+}
