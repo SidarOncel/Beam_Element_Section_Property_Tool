@@ -44,35 +44,59 @@ SectionProperties PropertyCalculator::calculateBoxSectionProperties(const Sectio
     SectionProperties props;
     double h = input.height;
     double b = input.width;
-    double t = input.wallThickness; // Assumes uniform wall thickness as per SectionInput
+    
+    // Support asymmetric thicknesses or fallback to single wallThickness
+    double tt = input.topFlangeThickness > 0 ? input.topFlangeThickness : input.wallThickness;
+    double tb = input.bottomFlangeThickness > 0 ? input.bottomFlangeThickness : input.wallThickness;
+    double tl = input.leftWebThickness > 0 ? input.leftWebThickness : input.wallThickness;
+    double tr = input.rightWebThickness > 0 ? input.rightWebThickness : input.wallThickness;
 
     // Dimensions of the inner void
-    double h_inner = h - 2.0 * t;
-    double b_inner = b - 2.0 * t;
+    double h_inner = h - tt - tb;
+    double b_inner = b - tl - tr;
 
-    // Area
-    props.Area = (b * h) - (b_inner * h_inner);
+    // Areas
+    double A_out = b * h;
+    double A_in = b_inner * h_inner;
+    props.Area = A_out - A_in;
 
-    // Centroid
-    props.cz = 0.0;
-    props.cy = 0.0;
+    // Void centroid relative to outer geometric center
+    double cy_in = -b / 2.0 + tl + b_inner / 2.0;
+    double cz_in = -h / 2.0 + tb + h_inner / 2.0;
 
-    // Moments of inertia
-    props.Jy = (b * std::pow(h, 3)) / 12.0 - (b_inner * std::pow(h_inner, 3)) / 12.0;
-    props.Jz = (h * std::pow(b, 3)) / 12.0 - (h_inner * std::pow(b_inner, 3)) / 12.0;
+    // Section Centroid
+    props.cy = (A_out * 0.0 - A_in * cy_in) / props.Area;
+    props.cz = (A_out * 0.0 - A_in * cz_in) / props.Area;
 
-    // Principal axes
+    // Moments of inertia about outer geometric center
+    double Jy_out = (b * std::pow(h, 3)) / 12.0;
+    double Jy_in = (b_inner * std::pow(h_inner, 3)) / 12.0 + A_in * std::pow(cz_in, 2);
+    double Jy_geom = Jy_out - Jy_in;
+
+    double Jz_out = (h * std::pow(b, 3)) / 12.0;
+    double Jz_in = (h_inner * std::pow(b_inner, 3)) / 12.0 + A_in * std::pow(cy_in, 2);
+    double Jz_geom = Jz_out - Jz_in;
+
+    // Shift to actual centroid (Parallel axis theorem)
+    props.Jy = Jy_geom - props.Area * std::pow(props.cz, 2);
+    props.Jz = Jz_geom - props.Area * std::pow(props.cy, 2);
+
+    // Principal axes (approximate assuming symmetry or small product of inertia)
     props.Jyo = props.Jy;
     props.Jzo = props.Jz;
 
-    // Torsional moment of inertia (Bredt's formula for thin-walled closed sections)
-    double Am = (b - t) * (h - t);
-    double U = 2.0 * ((b - t) + (h - t));
-    props.Jx = (4.0 * std::pow(Am, 2) * t) / U;
+    // Torsional moment of inertia (Bredt's formula for asymmetric thin-walled closed sections)
+    double bm = b - (tl + tr) / 2.0;
+    double hm = h - (tt + tb) / 2.0;
+    double Am = bm * hm;
+    
+    // Line integral of ds / t
+    double line_int = (bm / tt) + (bm / tb) + (hm / tl) + (hm / tr);
+    props.Jx = (4.0 * std::pow(Am, 2)) / line_int;
 
     // Shear areas
-    props.Az = 2.0 * h_inner * t;
-    props.Ay = 2.0 * b_inner * t;
+    props.Az = h_inner * (tl + tr);
+    props.Ay = b_inner * (tt + tb);
 
     return props;
 }

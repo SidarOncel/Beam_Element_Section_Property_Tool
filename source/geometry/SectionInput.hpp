@@ -43,15 +43,42 @@ struct SectionInput
 
     // Common dimensions
     double width = 0.0;
-    double height = 0.0;
+    double height = 0.0; // NOTE: This represents the TOTAL outer height of the section
 
     // H-section specific
     double flangeThickness = 0.0;
     double webThickness = 0.0;
 
+    // Box-section specific (supporting asymmetric thicknesses as per test data)
+    double topFlangeThickness = 0.0;
+    double bottomFlangeThickness = 0.0;
+    double leftWebThickness = 0.0;
+    double rightWebThickness = 0.0;
+
     // Pipe specific
     double diameter = 0.0;
     double wallThickness = 0.0;
+
+    // Quayside Crane Girder specific (19 parameters from test data)
+    double A = 0.0;
+    double B = 0.0;
+    double G = 0.0;
+    double D = 0.0;
+    double e = 0.0;
+    double f = 0.0;
+    double H = 0.0;
+    double W = 0.0;
+    double M = 0.0;
+    double N = 0.0;
+    double p = 0.0;
+    double s = 0.0;
+    double t = 0.0;
+    double u = 0.0;
+    double M1 = 0.0;
+    double k = 0.0;
+    double k1 = 0.0;
+    double h = 0.0;
+    double h1 = 0.0;
 
     // Optional general-purpose value for future extensions
     double extra = 0.0;
