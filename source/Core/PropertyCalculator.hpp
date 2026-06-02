@@ -1,48 +1,43 @@
-#ifndef PROPERTY_CALCULATOR_HPP
-#define PROPERTY_CALCULATOR_HPP
+#pragma once
+
+#include "../geometry/SectionInput.hpp"
+#include <cmath>
 
 // SectionProperties struct as defined in Member2_Plan.md Phase 1
 struct SectionProperties {
     // Area and centroid coordinates
-    double Area;
-    double cz;
-    double cy;
+    double Area = 0.0;
+    double cz = 0.0;
+    double cy = 0.0;
 
     // Moments of inertia about Z and Y axes
-    double Jz;
-    double Jy;
+    double Jz = 0.0;
+    double Jy = 0.0;
 
     // Moments of inertia about centroidal principal axes
-    double Jzo;
-    double Jyo;
+    double Jzo = 0.0;
+    double Jyo = 0.0;
 
     // Torsional moment of inertia
-    double Jx;
+    double Jx = 0.0;
 
     // Shear areas in Z and Y directions
-    double Az;
-    double Ay;
+    double Az = 0.0;
+    double Ay = 0.0;
 };
-
-// Forward declarations for Member 1's geometry classes
-class HSection;
-class BoxSection;
-class PipeSection;
-class CraneGirderSection;
 
 class PropertyCalculator {
 public:
     // Calculates properties for an H Section
-    static SectionProperties calculateProperties(const HSection& section);
+    static SectionProperties calculateHSectionProperties(const SectionInput& input);
 
     // Calculates properties for a Box Section
-    static SectionProperties calculateProperties(const BoxSection& section);
+    static SectionProperties calculateBoxSectionProperties(const SectionInput& input);
 
     // Calculates properties for a Pipe Section
-    static SectionProperties calculateProperties(const PipeSection& section);
+    static SectionProperties calculatePipeSectionProperties(const SectionInput& input);
 
     // Calculates properties for a Quayside Crane Girder Section
-    static SectionProperties calculateProperties(const CraneGirderSection& section);
+    // TODO: Waiting for Member 1 to define the 19 parameters in SectionInput
+    static SectionProperties calculateGirderSectionProperties(const SectionInput& input);
 };
-
-#endif // PROPERTY_CALCULATOR_HPP
