@@ -73,6 +73,32 @@ void TestBoxSection() {
     ASSERT_NEAR(163056.0, props.Area, 1e-1, "Box-Section Area (Internal Math Check)");
 }
 
+void TestGirderSection() {
+    SectionInput input;
+    input.type = SectionType::GirderSection;
+    
+    // Test Data parameters
+    input.A = 766.0; input.B = 836.0; input.G = 1090.0; input.D = 1160.0;
+    input.e = 20.0; input.f = 12.0; input.H = 2000.0; input.W = 934.0;
+    input.M = 350.0; input.N = 518.0; input.p = 20.0; input.s = 12.0;
+    input.t = 10.0; input.u = 10.0; input.M1 = 175.0; input.k = 150.0;
+    input.k1 = 12.0; input.h = 138.0; input.h1 = 10.0;
+
+    SectionProperties props = PropertyCalculator::calculateGirderSectionProperties(input);
+
+    std::cout << "--- Testing Quayside Crane Girder ---" << std::endl;
+    ASSERT_NEAR(8.7174e4, props.Area, 50.0, "Girder Area");
+    ASSERT_NEAR(1.4889e10, props.Jz, 1e8, "Girder Jz");
+    ASSERT_NEAR(4.9105e10, props.Jy, 1e8, "Girder Jy");
+    ASSERT_NEAR(2.1432e10, props.Jx, 1e8, "Girder Jx");
+    ASSERT_NEAR(-8.0260e9, props.Jyz, 1e8, "Girder Jyz");
+    ASSERT_NEAR(1.3099e10, props.Jzo, 1e8, "Girder Jzo");
+    ASSERT_NEAR(5.0894e10, props.Jyo, 1e8, "Girder Jyo");
+    // Depending on origin choices, cy and cz might be shifted in Test_data. 
+    // Usually they are relative to an arbitrary origin (like bottom left). 
+    // We will just verify Area and inertias to confirm the math logic.
+}
+
 int main() {
     std::cout << "========================================" << std::endl;
     std::cout << "   Property Calculator Test Runner      " << std::endl;
@@ -81,6 +107,7 @@ int main() {
     TestHSection();
     TestPipeSection();
     TestBoxSection();
+    TestGirderSection();
 
     std::cout << "========================================" << std::endl;
     if (failed_tests == 0) {
