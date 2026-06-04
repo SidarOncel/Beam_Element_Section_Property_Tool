@@ -1,0 +1,18 @@
+# ninja log v7
+1	532	1780597427876289833	CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.o	2612c653c837045b
+2	589	1780597427877035833	CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.o	cbb9ebad441b6933
+1	591	1780597427875836333	CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.o	62f361921c28615e
+2	682	1780597427876437500	CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.o	3e8e3535ac36c0f7
+2	715	1780597427877220708	CMakeFiles/beam_property_tests.dir/source/Tests/TestRunner.cpp.o	c5a3179285bf021b
+2	747	1780597427876649375	CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.o	cd8317ea4bfc4cbb
+1	785	1780597427876100500	CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.o	41ec40de192a4106
+786	873	1780597428660490520	libbeam_section_core.a	3acb872e9232a4ed
+874	943	1780597428748814638	beam_property_tests	254e7be1288f0f2e
+873	957	1780597428748209721	libbeam_section_gui_state.a	84f38b800146ce0c
+2	976	1780597427877392499	CMakeFiles/beam_section_gui.dir/source/GUI/FEMeshTab.cpp.o	34919bae0426e0eb
+3	987	1780597427877682375	CMakeFiles/beam_section_gui.dir/source/GUI/main.cpp.o	9b7f90ebd78877c3
+3	1119	1780597427877541499	CMakeFiles/beam_section_gui.dir/source/GUI/GeneralTab.cpp.o	7798c164e4c5508
+535	1144	1780597428410092748	CMakeFiles/beam_section_gui.dir/source/GUI/MainWindow.cpp.o	384f54230eb884f1
+589	1221	1780597428464179327	CMakeFiles/beam_section_gui.dir/source/GUI/SectionPreviewWidget.cpp.o	fe8adca38abefec9
+591	1264	1780597428465711369	CMakeFiles/beam_section_gui.dir/source/GUI/StressPointsTab.cpp.o	691cd16528bc5a
+1265	1309	1780597429139442398	beam_section_gui	1fa4fc2dfc86201b

@@ -39,6 +39,5 @@ public:
     static SectionProperties calculatePipeSectionProperties(const SectionInput& input);
 
     // Calculates properties for a Quayside Crane Girder Section
-    // TODO: Waiting for Member 1 to define the 19 parameters in SectionInput
     static SectionProperties calculateGirderSectionProperties(const SectionInput& input);
 };

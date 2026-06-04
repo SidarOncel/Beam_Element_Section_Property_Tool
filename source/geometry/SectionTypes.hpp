@@ -2,32 +2,7 @@
 
 /*
 ===============================================================================
-File: SectionTypes.h
-
-Purpose:
-Defines all cross-section types currently supported by the Beam Element
-Section Property Tool.
-
-This enum acts as the primary identifier used throughout the software.
-GUI components, geometry generation, property calculations, stress point
-generation, FE mesh creation, and DLL interfaces should all reference
-these values when determining section behavior.
-
-Supported Sections:
-- H Section
-- Box Section
-- Pipe Section
-- Quayside Crane Girder Section
-
-Developer Notes:
-When adding a new section type in the future, update this enum first and
-then implement the corresponding geometry, calculation, GUI, and export
-logic.
-#pragma once
-
-/*
-===============================================================================
-File: SectionTypes.h
+File: SectionTypes.hpp
 
 Purpose:
 Defines all cross-section types currently supported by the Beam Element

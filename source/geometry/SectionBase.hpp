@@ -1,8 +1,8 @@
 #pragma once
 
 #include <string>
-#include "SectionInput.h"
-#include "SectionShape.h"
+#include "SectionInput.hpp"
+#include "SectionShape.hpp"
 
 /*
 ===============================================================================

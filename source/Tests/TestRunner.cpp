@@ -8,7 +8,7 @@ int passed_tests = 0;
 
 void ASSERT_NEAR(double expected, double actual, double tolerance, const std::string& testName) {
     if (std::abs(expected - actual) > tolerance) {
-        std::cerr << "[FAIL] " << testName << " | Expected: " << expected << ", Actual: " << actual << std::endl;
+        std::cout << "[FAIL] " << testName << " | Expected: " << expected << ", Actual: " << actual << std::endl;
         failed_tests++;
     } else {
         std::cout << "[PASS] " << testName << std::endl;
@@ -113,7 +113,7 @@ int main() {
     if (failed_tests == 0) {
         std::cout << "ALL TESTS PASSED (" << passed_tests << " assertions)" << std::endl;
     } else {
-        std::cerr << failed_tests << " TESTS FAILED!" << std::endl;
+        std::cout << failed_tests << " TESTS FAILED!" << std::endl;
         return 1;
     }
     

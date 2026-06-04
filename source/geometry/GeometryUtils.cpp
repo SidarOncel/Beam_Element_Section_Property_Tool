@@ -1,4 +1,4 @@
-#include "GeometryUtils.h"
+#include "GeometryUtils.hpp"
 
 #include <algorithm>
 #include <cmath>

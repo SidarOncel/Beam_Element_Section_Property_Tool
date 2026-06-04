@@ -1,6 +1,6 @@
 #pragma once
 
-#include "SectionTypes.h"
+#include "SectionTypes.hpp"
 
 /*
 ===============================================================================

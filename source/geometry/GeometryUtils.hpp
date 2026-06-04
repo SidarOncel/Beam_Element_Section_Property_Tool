@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <string>
-#include "SectionShape.h"
+#include "SectionShape.hpp"
 
 /*
 ===============================================================================

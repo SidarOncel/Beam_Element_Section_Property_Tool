@@ -33,6 +33,66 @@ The tool provides:
 
 ---
 
+## Build and Run
+
+Prerequisites:
+
+* CMake 3.16 or newer
+* A C++17 compiler
+* Qt 5.15.2 with the Widgets module for the GUI target
+
+Configure and build:
+
+```bash
+cmake -S . -B build -DCMAKE_PREFIX_PATH="C:/Qt/5.15.2/msvc2019_64"
+cmake --build build --config Release
+```
+
+Run the GUI on Windows:
+
+```bash
+build\Release\beam_section_gui.exe
+```
+
+Run the property test target:
+
+```bash
+ctest --test-dir build --build-config Release --output-on-failure
+```
+
+If Qt Widgets is not found, CMake still builds the non-GUI targets and skips
+`beam_section_gui`.
+
+---
+
+## Manual GUI Smoke Checklist
+
+Use this checklist before a demo:
+
+* Launch `beam_section_gui` and confirm the main window opens with General,
+  Stress Points, and FE Mesh tabs.
+* On the General tab, switch through H Section, Box Section, Pipe Section, and
+  Girder Section. Confirm the input form, preview, and property table refresh.
+* Edit a valid dimension and confirm numeric values remain in mm with two
+  decimal places where shown.
+* Enter an invalid dimension, such as zero wall thickness, and confirm a
+  visible validation message appears and the preview is cleared.
+* Open Stress Points and confirm points 1-4 are listed with y and z coordinates
+  in mm.
+* Change the section type on General, return to Stress Points, and confirm the
+  stress-point table and marker preview refresh to the selected section.
+* Edit a stress-point coordinate manually and confirm the table keeps the value
+  formatted to two decimals and the marker preview updates.
+* Enter non-numeric text in a stress-point coordinate cell and confirm the
+  previous value is restored with a visible validation message.
+* Open FE Mesh and confirm the current section name follows the General tab.
+* Confirm FE Mesh controls are disabled and the placeholder message states that
+  the mesh module is unavailable.
+* Confirm the FE Mesh visualization area remains a placeholder host for future
+  external mesh output.
+
+---
+
 ## Project Structure
 
 ```text

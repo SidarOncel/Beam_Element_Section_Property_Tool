@@ -1,0 +1,51 @@
+2026-06-05 02:21:11,099 - aqt.main - INFO - installer 8356999296 aqtinstall(aqt) v3.3.0 on Python 3.14.5 [CPython Clang 21.0.0 (clang-2100.0.123.102)]
+2026-06-05 02:21:11,099 - aqt.helper - DEBUG - helper 8356999296 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt5_5152/Updates.xml.sha256
+2026-06-05 02:21:14,806 - aqt.helper - DEBUG - helper 8356999296 Attempt to download checksum at https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt5_5152/qt.qt5.5152.clang_64/5.15.2-0-202011130601qtbase-MacOS-MacOS_10_13-Clang-MacOS-MacOS_10_13-X86_64.7z.sha256
+2026-06-05 02:21:16,336 - aqt.helper - INFO - helper 8356999296 Downloading qtbase...
+2026-06-05 02:21:16,337 - aqt.installer - DEBUG - installer 8356999296 Download URL: https://download.qt.io/online/qtsdkrepository/mac_x64/desktop/qt5_5152/qt.qt5.5152.clang_64/5.15.2-0-202011130601qtbase-MacOS-MacOS_10_13-Clang-MacOS-MacOS_10_13-X86_64.7z
+2026-06-05 02:21:17,768 - aqt.helper - DEBUG - helper 8356999296 Asked to redirect(302) to: https://mirrors.20i.com/pub/qt.io/online/qtsdkrepository/mac_x64/desktop/qt5_5152/qt.qt5.5152.clang_64/5.15.2-0-202011130601qtbase-MacOS-MacOS_10_13-Clang-MacOS-MacOS_10_13-X86_64.7z
+2026-06-05 02:21:17,768 - aqt.helper - INFO - helper 8356999296 Redirected: mirrors.20i.com
+2026-06-05 02:21:29,807 - aqt.installer - INFO - installer 8356999296 Finished installation of qtbase-MacOS-MacOS_10_13-Clang-MacOS-MacOS_10_13-X86_64.7z in 15.00258825
+2026-06-05 02:21:31,751 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/bin/qmake
+2026-06-05 02:21:31,760 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Xml.pc
+2026-06-05 02:21:31,761 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Network.pc
+2026-06-05 02:21:31,761 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5OpenGLExtensions.pc
+2026-06-05 02:21:31,762 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Widgets.pc
+2026-06-05 02:21:31,762 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5DBus.pc
+2026-06-05 02:21:31,763 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5OpenGL.pc
+2026-06-05 02:21:31,763 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Core.pc
+2026-06-05 02:21:31,764 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Test.pc
+2026-06-05 02:21:31,764 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Gui.pc
+2026-06-05 02:21:31,765 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Sql.pc
+2026-06-05 02:21:31,765 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5PrintSupport.pc
+2026-06-05 02:21:31,766 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/pkgconfig/Qt5Concurrent.pc
+2026-06-05 02:21:31,766 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5ClipboardSupport.la
+2026-06-05 02:21:31,767 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5GraphicsSupport.la
+2026-06-05 02:21:31,768 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5PlatformCompositorSupport.la
+2026-06-05 02:21:31,769 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5ServiceSupport.la
+2026-06-05 02:21:31,769 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5EdidSupport.la
+2026-06-05 02:21:31,770 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5DeviceDiscoverySupport.la
+2026-06-05 02:21:31,771 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5EventDispatcherSupport.la
+2026-06-05 02:21:31,771 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5FontDatabaseSupport.la
+2026-06-05 02:21:31,772 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5OpenGLExtensions.la
+2026-06-05 02:21:31,773 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5ThemeSupport.la
+2026-06-05 02:21:31,773 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5FbSupport.la
+2026-06-05 02:21:31,774 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5Bootstrap.la
+2026-06-05 02:21:31,774 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5AccessibilitySupport.la
+2026-06-05 02:21:31,775 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5DeviceDiscoverySupport.prl
+2026-06-05 02:21:31,775 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libqtlibpng.prl
+2026-06-05 02:21:31,776 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5EdidSupport.prl
+2026-06-05 02:21:31,776 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5PlatformCompositorSupport.prl
+2026-06-05 02:21:31,776 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5GraphicsSupport.prl
+2026-06-05 02:21:31,776 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5ClipboardSupport.prl
+2026-06-05 02:21:31,777 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5ThemeSupport.prl
+2026-06-05 02:21:31,777 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5FontDatabaseSupport.prl
+2026-06-05 02:21:31,778 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5Bootstrap.prl
+2026-06-05 02:21:31,778 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5ServiceSupport.prl
+2026-06-05 02:21:31,778 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5FbSupport.prl
+2026-06-05 02:21:31,778 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5EventDispatcherSupport.prl
+2026-06-05 02:21:31,779 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5OpenGLExtensions.prl
+2026-06-05 02:21:31,779 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libqtfreetype.prl
+2026-06-05 02:21:31,779 - aqt.updater - INFO - updater 8356999296 Patching .qt/5.15.2/clang_64/lib/libQt5AccessibilitySupport.prl
+2026-06-05 02:21:31,779 - aqt.main - INFO - installer 8356999296 Finished installation
+2026-06-05 02:21:31,780 - aqt.main - INFO - installer 8356999296 Time elapsed: 20.68094725 second
