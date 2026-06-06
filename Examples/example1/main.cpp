@@ -1,6 +1,6 @@
 // H-shape
 #include <iostream>
-#include "../../Source/API/BeamSectionAPI.h"
+#include "../../Source/API/API.h"
 
 int main()
 {
