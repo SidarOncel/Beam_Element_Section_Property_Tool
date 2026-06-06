@@ -1,7 +1,5 @@
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/beam_section_core.dir
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/beam_property_tests.dir
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/beam_section_gui_state.dir
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/beam_section_gui.dir
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/test.dir
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/edit_cache.dir
-/Users/lucaglionna/Desktop/Beam_Element_Section_Property_Tool-main/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_core.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui_state.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/edit_cache.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/rebuild_cache.dir

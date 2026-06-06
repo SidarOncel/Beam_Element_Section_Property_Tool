@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/source/**",
+                "C:/msys64/ucrt64/include",
+                "C:/msys64/ucrt64/include/qt6",
+                "C:/msys64/ucrt64/include/qt6/QtCore",
+                "C:/msys64/ucrt64/include/qt6/QtWidgets",
+                "C:/msys64/ucrt64/include/qt6/QtGui"
+            ],
+            "defines": [
+                "QT_CORE_LIB",
+                "QT_WIDGETS_LIB",
+                "QT_GUI_LIB"
+            ],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

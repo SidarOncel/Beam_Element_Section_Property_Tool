@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libbeam_section_gui_state.a CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libbeam_section_gui_state.a
