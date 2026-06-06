@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../geometry/SectionInput.hpp"
-#include "../geometry/SectionShape.hpp"
-#include "../Core/PropertyCalculator.hpp"
-#include "../Mesh/MeshGenerator.hpp"
+#include "SectionInput.hpp"
+#include "SectionShape.hpp"
+#include "PropertyCalculator.hpp"
+#include "MeshGenerator.hpp"
 
 // DLL 
 #ifdef BEAM_SECTION_API_EXPORTS
