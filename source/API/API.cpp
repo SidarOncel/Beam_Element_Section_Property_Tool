@@ -1,6 +1,6 @@
-#include "BeamSectionAPI.h"
+#include "API.h"
 #include "../Core/PropertyCalculator.hpp"
-#include "../Mesh/MeshGenerator.hpp"
+#include "../GUI/MeshGenerator.hpp"
 
 int CalculateSectionProperties(const SectionInput* input, SectionProperties* out)
 {
