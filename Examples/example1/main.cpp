@@ -1,6 +1,6 @@
 // H-shape
 #include <iostream>
-#include "../../Source/API/API.h"
+#include "API.h"
 
 int main()
 {
