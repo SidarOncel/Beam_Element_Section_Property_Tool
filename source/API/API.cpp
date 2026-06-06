@@ -1,6 +1,6 @@
 #include "API.h"
-#include "../Core/PropertyCalculator.hpp"
-#include "../GUI/MeshGenerator.hpp"
+#include "PropertyCalculator.hpp"
+#include "MeshGenerator.hpp"
 
 int CalculateSectionProperties(const SectionInput* input, SectionProperties* out)
 {
