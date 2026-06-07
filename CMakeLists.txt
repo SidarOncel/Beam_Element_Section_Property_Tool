@@ -11,6 +11,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_library(beam_section_core
     source/Core/PropertyCalculator.cpp
+    source/Core/SectionExport.cpp
     source/geometry/GeometryUtils.cpp
     source/geometry/SectionBase.cpp
 )
