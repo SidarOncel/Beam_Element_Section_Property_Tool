@@ -1,5 +1,6 @@
 #include "SectionExport.hpp"
 
+#include <fstream>
 #include <iomanip>
 #include <sstream>
 #include <string>
@@ -142,6 +143,25 @@ namespace
                    << field.unit << '\n';
         }
     }
+
+    bool writeTextFile(const std::string& filePath, const std::string& text)
+    {
+        try
+        {
+            std::ofstream file(filePath);
+            if (!file)
+            {
+                return false;
+            }
+
+            file << text;
+            return static_cast<bool>(file);
+        }
+        catch (...)
+        {
+            return false;
+        }
+    }
 }
 
 namespace SectionExport
@@ -185,5 +205,21 @@ namespace SectionExport
         appendFemLines(stream, propertyFields(properties), options.precision);
 
         return stream.str();
+    }
+
+    bool writePropertiesReportToFile(const SectionInput& input,
+                                     const SectionProperties& properties,
+                                     const std::string& filePath,
+                                     const ExportOptions& options)
+    {
+        return writeTextFile(filePath, formatPropertiesReport(input, properties, options));
+    }
+
+    bool writeFemCardToFile(const SectionInput& input,
+                            const SectionProperties& properties,
+                            const std::string& filePath,
+                            const ExportOptions& options)
+    {
+        return writeTextFile(filePath, formatFemCard(input, properties, options));
     }
 }

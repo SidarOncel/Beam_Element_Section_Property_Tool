@@ -1,0 +1,10 @@
+[Section]
+type=H_SECTION
+unit=mm
+precision=2
+
+[Parameters]
+width=100.00
+height=250.00
+flangeThickness=20.00
+webThickness=12.00

@@ -12,6 +12,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 add_library(beam_section_core
     source/Core/PropertyCalculator.cpp
     source/Core/SectionExport.cpp
+    source/Core/SectionProjectIO.cpp
     source/geometry/GeometryUtils.cpp
     source/geometry/SectionBase.cpp
 )
@@ -54,3 +55,15 @@ target_link_libraries(beam_section_gui
         beam_section_gui_state
         Qt6::Widgets
 )
+
+enable_testing()
+
+add_executable(section_export_tests
+    source/Tests/SectionExportTests.cpp
+)
+
+target_link_libraries(section_export_tests
+    PRIVATE beam_section_core
+)
+
+add_test(NAME section_export_tests COMMAND section_export_tests)

@@ -20,4 +20,14 @@ namespace SectionExport
     std::string formatFemCard(const SectionInput& input,
                               const SectionProperties& properties,
                               const ExportOptions& options = {});
+
+    bool writePropertiesReportToFile(const SectionInput& input,
+                                     const SectionProperties& properties,
+                                     const std::string& filePath,
+                                     const ExportOptions& options = {});
+
+    bool writeFemCardToFile(const SectionInput& input,
+                            const SectionProperties& properties,
+                            const std::string& filePath,
+                            const ExportOptions& options = {});
 }
