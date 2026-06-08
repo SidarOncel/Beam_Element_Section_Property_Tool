@@ -8,6 +8,15 @@ set(CMAKE_CXX_EXTENSIONS ON)
 
 set(CMAKE_PREFIX_PATH "C:/msys64/ucrt64")
 
+# Qt6 bul
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
+# AUTOMOC ayarları (fno-ident OLMADAN)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+# Kütüphaneler
 add_library(beam_section_core
     source/Core/PropertyCalculator.cpp
     source/geometry/GeometryUtils.cpp
@@ -20,6 +29,7 @@ target_include_directories(beam_section_core
 
 target_compile_options(beam_section_core PRIVATE -Wall -Wextra -Wpedantic)
 
+# GUI State Kütüphanesi
 add_library(beam_section_gui_state
     source/GUI/PreviewShapeAdapter.cpp
     source/GUI/SectionState.cpp
@@ -32,21 +42,12 @@ target_include_directories(beam_section_gui_state
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/source
 )
 
-# Qt6 include yolunu elle ekle (KESİN ÇÖZÜM)
-target_include_directories(beam_section_gui_state
-    PRIVATE
-        "C:/msys64/ucrt64/include/qt6"
-        "C:/msys64/ucrt64/include/qt6/QtCore"
-        "C:/msys64/ucrt64/include/qt6/QtWidgets"
-        "C:/msys64/ucrt64/include/qt6/QtGui"
-)
-
 target_link_libraries(beam_section_gui_state
     PUBLIC beam_section_core
+    PRIVATE Qt6::Widgets
 )
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
-
+# Ana Uygulama
 add_executable(beam_section_gui
     source/GUI/FEMeshTab.cpp
     source/GUI/GeneralTab.cpp

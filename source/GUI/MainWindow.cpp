@@ -3,9 +3,13 @@
 #include "FEMeshTab.hpp"
 #include "GeneralTab.hpp"
 #include "StressPointsTab.hpp"
+#include "MeshDisplayWidget.hpp"
+#include "MeshGenerator.hpp"
 
 #include <QTabWidget>
 #include <QWidget>
+#include <QMessageBox>
+#include <QPushButton>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent),
@@ -46,6 +50,18 @@ FEMeshTab* MainWindow::createFEMeshTab()
 {
     m_feMeshTab = new FEMeshTab(m_tabWidget);
     m_feMeshTab->setObjectName(QStringLiteral("feMeshTab"));
+    
+    // Mesh display widget'ı oluştur ve FE Mesh tab'ının içine yerleştir
+    m_meshDisplayWidget = new MeshDisplayWidget(m_feMeshTab);
+    m_feMeshTab->setExternalMeshWidget(m_meshDisplayWidget);
+    
+    // Generate butonuna tıklama olayını bağla
+    connect(m_feMeshTab->generateButton(), &QPushButton::clicked,
+            this, &MainWindow::onGenerateMeshClicked);
+    
+    // Mesh kontrollerini aktif et (placeholder değil, gerçek modül)
+    m_feMeshTab->setMeshControlsEnabled(true);
+    
     return m_feMeshTab;
 }
 
@@ -65,5 +81,44 @@ void MainWindow::refreshDependentTabs()
     if (m_feMeshTab != nullptr)
     {
         m_feMeshTab->setSectionInput(m_currentInput);
+    }
+}
+
+void MainWindow::onGenerateMeshClicked()
+{
+    if (!m_feMeshTab || !m_meshDisplayWidget || !m_generalTab)
+    {
+        return;
+    }
+    
+    // GeneralTab'dan mevcut şekli al
+    SectionShape shape = m_generalTab->getCurrentShape();
+    
+    if (shape.boundaryPoints.empty())
+    {
+        QMessageBox::warning(this, tr("Mesh Generation"),
+                            tr("No valid section shape available.\nPlease check General tab inputs."));
+        return;
+    }
+    
+    // Mesh boyutunu al
+    double meshSize = m_feMeshTab->requestedMeshSize();
+    if (meshSize <= 0.0)
+    {
+        meshSize = 100.0;  // Varsayılan değer
+    }
+    
+    // Mesh'i oluştur
+    MeshData meshData = MeshGenerator::generate(shape, meshSize);
+    
+    if (meshData.isValid && !meshData.triangles.empty())
+    {
+        m_meshDisplayWidget->setMeshData(meshData);
+    }
+    else
+    {
+        QMessageBox::warning(this, tr("Mesh Generation"),
+                            tr("Failed to generate mesh.\nPlease check the section geometry."));
+        m_meshDisplayWidget->clear();
     }
 }

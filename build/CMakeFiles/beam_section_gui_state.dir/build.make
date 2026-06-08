@@ -68,86 +68,109 @@ include CMakeFiles/beam_section_gui_state.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/beam_section_gui_state.dir/flags.make
 
+beam_section_gui_state_autogen/timestamp: C:/msys64/ucrt64/share/qt6/bin/moc.exe
+beam_section_gui_state_autogen/timestamp: C:/msys64/ucrt64/share/qt6/bin/uic.exe
+beam_section_gui_state_autogen/timestamp: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target beam_section_gui_state"
+	C:\msys64\ucrt64\bin\cmake.exe -E cmake_autogen C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui_state_autogen.dir/AutogenInfo.json ""
+	C:\msys64\ucrt64\bin\cmake.exe -E touch C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/beam_section_gui_state_autogen/timestamp
+
 CMakeFiles/beam_section_gui_state.dir/codegen:
 .PHONY : CMakeFiles/beam_section_gui_state.dir/codegen
+
+CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj: CMakeFiles/beam_section_gui_state.dir/flags.make
+CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj: CMakeFiles/beam_section_gui_state.dir/includes_CXX.rsp
+CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj: beam_section_gui_state_autogen/mocs_compilation.cpp
+CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\beam_section_gui_state_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\beam_section_gui_state_autogen\mocs_compilation.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\beam_section_gui_state_autogen\mocs_compilation.cpp
+
+CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\beam_section_gui_state_autogen\mocs_compilation.cpp > CMakeFiles\beam_section_gui_state.dir\beam_section_gui_state_autogen\mocs_compilation.cpp.i
+
+CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\beam_section_gui_state_autogen\mocs_compilation.cpp -o CMakeFiles\beam_section_gui_state.dir\beam_section_gui_state_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj: CMakeFiles/beam_section_gui_state.dir/flags.make
 CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj: CMakeFiles/beam_section_gui_state.dir/includes_CXX.rsp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/GUI/PreviewShapeAdapter.cpp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.cpp
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.i
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\PreviewShapeAdapter.cpp.s
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj: CMakeFiles/beam_section_gui_state.dir/flags.make
 CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj: CMakeFiles/beam_section_gui_state.dir/includes_CXX.rsp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/GUI/SectionState.cpp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionState.cpp
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionState.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionState.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.i
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionState.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionState.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\SectionState.cpp.s
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj: CMakeFiles/beam_section_gui_state.dir/flags.make
 CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj: CMakeFiles/beam_section_gui_state.dir/includes_CXX.rsp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/GUI/StressPointDefaults.cpp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\StressPointDefaults.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\StressPointDefaults.cpp
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\StressPointDefaults.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\StressPointDefaults.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.i
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\StressPointDefaults.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\StressPointDefaults.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\StressPointDefaults.cpp.s
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj: CMakeFiles/beam_section_gui_state.dir/flags.make
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj: CMakeFiles/beam_section_gui_state.dir/includes_CXX.rsp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/GUI/MeshGenerator.cpp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshGenerator.cpp
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshGenerator.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshGenerator.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.i
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshGenerator.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshGenerator.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshGenerator.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshGenerator.cpp.s
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj: CMakeFiles/beam_section_gui_state.dir/flags.make
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj: CMakeFiles/beam_section_gui_state.dir/includes_CXX.rsp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/GUI/MeshDisplayWidget.cpp
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj: CMakeFiles/beam_section_gui_state.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshDisplayWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj -MF CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.obj.d -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshDisplayWidget.cpp
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshDisplayWidget.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshDisplayWidget.cpp > CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.i
 
 CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshDisplayWidget.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\MeshDisplayWidget.cpp -o CMakeFiles\beam_section_gui_state.dir\source\GUI\MeshDisplayWidget.cpp.s
 
 # Object files for target beam_section_gui_state
 beam_section_gui_state_OBJECTS = \
+"CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj" \
 "CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj" \
 "CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj" \
@@ -157,6 +180,7 @@ beam_section_gui_state_OBJECTS = \
 # External object files for target beam_section_gui_state
 beam_section_gui_state_EXTERNAL_OBJECTS =
 
+libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.obj
 libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/source/GUI/PreviewShapeAdapter.cpp.obj
 libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/source/GUI/SectionState.cpp.obj
 libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/source/GUI/StressPointDefaults.cpp.obj
@@ -164,7 +188,7 @@ libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/source/GUI/Me
 libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/source/GUI/MeshDisplayWidget.cpp.obj
 libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/build.make
 libbeam_section_gui_state.a: CMakeFiles/beam_section_gui_state.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libbeam_section_gui_state.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libbeam_section_gui_state.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\beam_section_gui_state.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\beam_section_gui_state.dir\link.txt --verbose=$(VERBOSE)
 
@@ -176,7 +200,7 @@ CMakeFiles/beam_section_gui_state.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\beam_section_gui_state.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/beam_section_gui_state.dir/clean
 
-CMakeFiles/beam_section_gui_state.dir/depend:
+CMakeFiles/beam_section_gui_state.dir/depend: beam_section_gui_state_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ZUMRA\Beam_Element_Section_Property_Tool C:\Users\ZUMRA\Beam_Element_Section_Property_Tool C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles\beam_section_gui_state.dir\DependInfo.cmake "--color=$(COLOR)" beam_section_gui_state
 .PHONY : CMakeFiles/beam_section_gui_state.dir/depend
 

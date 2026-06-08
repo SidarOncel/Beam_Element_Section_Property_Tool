@@ -1,6 +1,7 @@
 #pragma once
 
 #include "SectionState.hpp"
+#include "../geometry/SectionShape.hpp"
 
 #include <QWidget>
 
@@ -21,6 +22,8 @@ public:
 
     const SectionInput& currentInput() const;
     void setInputChangedCallback(std::function<void(const SectionInput&)> callback);
+    
+    SectionShape getCurrentShape() const;
 
 private:
     struct ParameterBinding

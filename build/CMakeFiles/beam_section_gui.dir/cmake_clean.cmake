@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/beam_section_gui_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/beam_section_gui_autogen.dir/ParseCache.txt"
+  "beam_section_gui_autogen"
+  "CMakeFiles/beam_section_gui.dir/beam_section_gui_autogen/mocs_compilation.cpp.obj"
+  "CMakeFiles/beam_section_gui.dir/beam_section_gui_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/beam_section_gui.dir/source/GUI/FEMeshTab.cpp.obj"
   "CMakeFiles/beam_section_gui.dir/source/GUI/FEMeshTab.cpp.obj.d"
   "CMakeFiles/beam_section_gui.dir/source/GUI/GeneralTab.cpp.obj"
@@ -14,6 +19,8 @@ file(REMOVE_RECURSE
   "beam_section_gui.exe"
   "beam_section_gui.exe.manifest"
   "beam_section_gui.pdb"
+  "beam_section_gui_autogen/mocs_compilation.cpp"
+  "beam_section_gui_autogen/timestamp"
   "libbeam_section_gui.dll.a"
 )
 

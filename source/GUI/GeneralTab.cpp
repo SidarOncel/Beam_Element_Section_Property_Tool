@@ -58,6 +58,11 @@ void GeneralTab::setInputChangedCallback(std::function<void(const SectionInput&)
     m_inputChangedCallback = std::move(callback);
 }
 
+SectionShape GeneralTab::getCurrentShape() const
+{
+    return PreviewShapeAdapter::createShape(m_state.input());
+}
+
 void GeneralTab::setupUi()
 {
     auto* rootLayout = new QHBoxLayout(this);

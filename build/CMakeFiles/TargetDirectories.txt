@@ -3,3 +3,9 @@ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_
 C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui.dir
 C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/edit_cache.dir
 C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_core_autogen_timestamp_deps.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_core_autogen.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui_state_autogen_timestamp_deps.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui_state_autogen.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui_autogen_timestamp_deps.dir
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_gui_autogen.dir

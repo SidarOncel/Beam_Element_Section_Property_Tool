@@ -127,6 +127,7 @@ CMakeFiles/beam_section_gui.dir/source/GUI/GeneralTab.cpp.obj: \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/16.1.0/bits/vector.tcc \
+ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionShape.hpp \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QWidget \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qwidget.h \
  C:/msys64/ucrt64/include/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -395,7 +396,6 @@ CMakeFiles/beam_section_gui.dir/source/GUI/GeneralTab.cpp.obj: \
  C:/msys64/ucrt64/include/qt6/QtGui/qcursor.h \
  C:/msys64/ucrt64/include/qt6/QtGui/qbitmap.h \
  C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\PreviewShapeAdapter.hpp \
- C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionShape.hpp \
  C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\GUI\SectionPreviewWidget.hpp \
  C:/msys64/ucrt64/include/qt6/QtCore/QString \
  C:/msys64/ucrt64/include/qt6/QtWidgets/QComboBox \

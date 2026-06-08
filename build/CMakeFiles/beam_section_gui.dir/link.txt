@@ -1,3 +1,3 @@
 C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\beam_section_gui.dir/objects.a
 C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\beam_section_gui.dir/objects.a @CMakeFiles\beam_section_gui.dir\objects1.rsp
-C:\msys64\ucrt64\bin\c++.exe -Wl,--whole-archive CMakeFiles\beam_section_gui.dir/objects.a -Wl,--no-whole-archive -o beam_section_gui.exe -Wl,--out-implib,libbeam_section_gui.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\beam_section_gui.dir\linkLibs.rsp
+C:\msys64\ucrt64\bin\g++.exe -Wl,--whole-archive CMakeFiles\beam_section_gui.dir/objects.a -Wl,--no-whole-archive -o beam_section_gui.exe -Wl,--out-implib,libbeam_section_gui.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\beam_section_gui.dir\linkLibs.rsp

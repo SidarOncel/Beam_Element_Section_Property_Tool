@@ -68,56 +68,79 @@ include CMakeFiles/beam_section_core.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/beam_section_core.dir/flags.make
 
+beam_section_core_autogen/timestamp: C:/msys64/ucrt64/share/qt6/bin/moc.exe
+beam_section_core_autogen/timestamp: C:/msys64/ucrt64/share/qt6/bin/uic.exe
+beam_section_core_autogen/timestamp: CMakeFiles/beam_section_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target beam_section_core"
+	C:\msys64\ucrt64\bin\cmake.exe -E cmake_autogen C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/beam_section_core_autogen.dir/AutogenInfo.json ""
+	C:\msys64\ucrt64\bin\cmake.exe -E touch C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/beam_section_core_autogen/timestamp
+
 CMakeFiles/beam_section_core.dir/codegen:
 .PHONY : CMakeFiles/beam_section_core.dir/codegen
+
+CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj: CMakeFiles/beam_section_core.dir/flags.make
+CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj: CMakeFiles/beam_section_core.dir/includes_CXX.rsp
+CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj: beam_section_core_autogen/mocs_compilation.cpp
+CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj: CMakeFiles/beam_section_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\beam_section_core.dir\beam_section_core_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\beam_section_core.dir\beam_section_core_autogen\mocs_compilation.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\beam_section_core_autogen\mocs_compilation.cpp
+
+CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\beam_section_core_autogen\mocs_compilation.cpp > CMakeFiles\beam_section_core.dir\beam_section_core_autogen\mocs_compilation.cpp.i
+
+CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\beam_section_core_autogen\mocs_compilation.cpp -o CMakeFiles\beam_section_core.dir\beam_section_core_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj: CMakeFiles/beam_section_core.dir/flags.make
 CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj: CMakeFiles/beam_section_core.dir/includes_CXX.rsp
 CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.cpp
 CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj: CMakeFiles/beam_section_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj -MF CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.obj.d -o CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\Core\PropertyCalculator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj -MF CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.obj.d -o CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\Core\PropertyCalculator.cpp
 
 CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\Core\PropertyCalculator.cpp > CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\Core\PropertyCalculator.cpp > CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.i
 
 CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\Core\PropertyCalculator.cpp -o CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\Core\PropertyCalculator.cpp -o CMakeFiles\beam_section_core.dir\source\Core\PropertyCalculator.cpp.s
 
 CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj: CMakeFiles/beam_section_core.dir/flags.make
 CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj: CMakeFiles/beam_section_core.dir/includes_CXX.rsp
 CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/GeometryUtils.cpp
 CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj: CMakeFiles/beam_section_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj -MF CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.obj.d -o CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\GeometryUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj -MF CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.obj.d -o CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\GeometryUtils.cpp
 
 CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\GeometryUtils.cpp > CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\GeometryUtils.cpp > CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.i
 
 CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\GeometryUtils.cpp -o CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\GeometryUtils.cpp -o CMakeFiles\beam_section_core.dir\source\geometry\GeometryUtils.cpp.s
 
 CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj: CMakeFiles/beam_section_core.dir/flags.make
 CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj: CMakeFiles/beam_section_core.dir/includes_CXX.rsp
 CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj: C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionBase.cpp
 CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj: CMakeFiles/beam_section_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj -MF CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.obj.d -o CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\SectionBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj -MF CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.obj.d -o CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.obj -c C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\SectionBase.cpp
 
 CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\SectionBase.cpp > CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\SectionBase.cpp > CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.i
 
 CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\SectionBase.cpp -o CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\source\geometry\SectionBase.cpp -o CMakeFiles\beam_section_core.dir\source\geometry\SectionBase.cpp.s
 
 # Object files for target beam_section_core
 beam_section_core_OBJECTS = \
+"CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj" \
 "CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj" \
 "CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj"
@@ -125,12 +148,13 @@ beam_section_core_OBJECTS = \
 # External object files for target beam_section_core
 beam_section_core_EXTERNAL_OBJECTS =
 
+libbeam_section_core.a: CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj
 libbeam_section_core.a: CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj
 libbeam_section_core.a: CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj
 libbeam_section_core.a: CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj
 libbeam_section_core.a: CMakeFiles/beam_section_core.dir/build.make
 libbeam_section_core.a: CMakeFiles/beam_section_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libbeam_section_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libbeam_section_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\beam_section_core.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\beam_section_core.dir\link.txt --verbose=$(VERBOSE)
 
@@ -142,7 +166,7 @@ CMakeFiles/beam_section_core.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\beam_section_core.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/beam_section_core.dir/clean
 
-CMakeFiles/beam_section_core.dir/depend:
+CMakeFiles/beam_section_core.dir/depend: beam_section_core_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ZUMRA\Beam_Element_Section_Property_Tool C:\Users\ZUMRA\Beam_Element_Section_Property_Tool C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\CMakeFiles\beam_section_core.dir\DependInfo.cmake "--color=$(COLOR)" beam_section_core
 .PHONY : CMakeFiles/beam_section_core.dir/depend
 
