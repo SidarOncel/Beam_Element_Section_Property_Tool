@@ -1,0 +1,12 @@
+[Section]
+type=BOX_SECTION
+unit=mm
+precision=2
+
+[Parameters]
+width=1320.00
+height=2600.00
+topFlangeThickness=40.00
+bottomFlangeThickness=22.00
+leftWebThickness=16.00
+rightWebThickness=16.00

@@ -5,8 +5,9 @@ project(BeamElementSectionPropertyTool VERSION 0.1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
+set(CMAKE_AUTOMOC ON)
 
-set(CMAKE_PREFIX_PATH "C:/msys64/ucrt64")
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # Qt6 bul
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
@@ -19,6 +20,8 @@ set(CMAKE_AUTORCC ON)
 # Kütüphaneler
 add_library(beam_section_core
     source/Core/PropertyCalculator.cpp
+    source/Core/SectionExport.cpp
+    source/Core/SectionProjectIO.cpp
     source/geometry/GeometryUtils.cpp
     source/geometry/SectionBase.cpp
 )
@@ -47,7 +50,6 @@ target_link_libraries(beam_section_gui_state
     PRIVATE Qt6::Widgets
 )
 
-# Ana Uygulama
 add_executable(beam_section_gui
     source/GUI/FEMeshTab.cpp
     source/GUI/GeneralTab.cpp
@@ -62,3 +64,15 @@ target_link_libraries(beam_section_gui
         beam_section_gui_state
         Qt6::Widgets
 )
+
+enable_testing()
+
+add_executable(section_export_tests
+    source/Tests/SectionExportTests.cpp
+)
+
+target_link_libraries(section_export_tests
+    PRIVATE beam_section_core
+)
+
+add_test(NAME section_export_tests COMMAND section_export_tests)

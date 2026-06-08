@@ -1,0 +1,24 @@
+Beam Element Section Property Tool
+Section Properties Report
+Section Type: Box Section
+
+Input Parameters
+- Width: 1320.00 mm
+- Height: 2600.00 mm
+- Top Flange Thickness: 40.00 mm
+- Bottom Flange Thickness: 22.00 mm
+- Left Web Thickness: 16.00 mm
+- Right Web Thickness: 16.00 mm
+
+Calculated Properties
+- Area: 163056.00 mm^2
+- cy: 0.00 mm
+- cz: 180.43 mm
+- Jz: 46410147072.00 mm^4
+- Jy: 173060178038.74 mm^4
+- Jyz: 0.00 mm^4
+- Jzo: 46410147072.00 mm^4
+- Jyo: 173060178038.74 mm^4
+- Jx: 108691534693.75 mm^4
+- Az: 81216.00 mm^2
+- Ay: 79856.00 mm^2
