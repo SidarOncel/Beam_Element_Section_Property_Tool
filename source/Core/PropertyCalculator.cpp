@@ -177,10 +177,12 @@ SectionProperties PropertyCalculator::calculateGirderSectionProperties(const Sec
     addRect(input.t, input.H, 0.0, input.H / 2.0);
 
     // 2. Top Flange
-    addRect(input.B, input.e, input.A / 2.0, input.H); 
+    // Fix: cz is the center. Top flange spans from H - e to H, so center is H - e/2.0
+    addRect(input.B, input.e, input.A / 2.0, input.H - input.e / 2.0); 
 
     // 3. Bottom Flange
-    addRect(input.D, input.f, input.G / 2.0, 0.0);
+    // Fix: cz is the center. Bottom flange spans from 0 to f, so center is f/2.0
+    addRect(input.D, input.f, input.G / 2.0, input.f / 2.0);
 
     // 4. Right Web (Upper)
     addRect(input.u, input.H - input.W, input.A, input.W + (input.H - input.W) / 2.0);
