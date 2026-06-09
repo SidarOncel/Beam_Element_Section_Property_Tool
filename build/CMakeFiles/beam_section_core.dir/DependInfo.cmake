@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "beam_section_core_autogen/timestamp" "custom" "beam_section_core_autogen/deps"
   "C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/beam_section_core_autogen/mocs_compilation.cpp" "CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/beam_section_core.dir/beam_section_core_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.cpp" "CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj" "gcc" "CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.obj.d"
+  "C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.cpp" "CMakeFiles/beam_section_core.dir/source/Core/SectionExport.cpp.obj" "gcc" "CMakeFiles/beam_section_core.dir/source/Core/SectionExport.cpp.obj.d"
+  "C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.cpp" "CMakeFiles/beam_section_core.dir/source/Core/SectionProjectIO.cpp.obj" "gcc" "CMakeFiles/beam_section_core.dir/source/Core/SectionProjectIO.cpp.obj.d"
   "C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/GeometryUtils.cpp" "CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj" "gcc" "CMakeFiles/beam_section_core.dir/source/geometry/GeometryUtils.cpp.obj.d"
   "C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionBase.cpp" "CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj" "gcc" "CMakeFiles/beam_section_core.dir/source/geometry/SectionBase.cpp.obj.d"
   )

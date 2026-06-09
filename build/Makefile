@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	C:\msys64\ucrt64\bin\ctest.exe $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -155,6 +165,19 @@ beam_section_gui/fast:
 .PHONY : beam_section_gui/fast
 
 #=============================================================================
+# Target rules for targets named section_export_tests
+
+# Build rule for target.
+section_export_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 section_export_tests
+.PHONY : section_export_tests
+
+# fast build rule for target.
+section_export_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/build
+.PHONY : section_export_tests/fast
+
+#=============================================================================
 # Target rules for targets named beam_section_core_autogen_timestamp_deps
 
 # Build rule for target.
@@ -232,6 +255,32 @@ beam_section_gui_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_gui_autogen.dir\build.make CMakeFiles/beam_section_gui_autogen.dir/build
 .PHONY : beam_section_gui_autogen/fast
 
+#=============================================================================
+# Target rules for targets named section_export_tests_autogen_timestamp_deps
+
+# Build rule for target.
+section_export_tests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 section_export_tests_autogen_timestamp_deps
+.PHONY : section_export_tests_autogen_timestamp_deps
+
+# fast build rule for target.
+section_export_tests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests_autogen_timestamp_deps.dir\build.make CMakeFiles/section_export_tests_autogen_timestamp_deps.dir/build
+.PHONY : section_export_tests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named section_export_tests_autogen
+
+# Build rule for target.
+section_export_tests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 section_export_tests_autogen
+.PHONY : section_export_tests_autogen
+
+# fast build rule for target.
+section_export_tests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests_autogen.dir\build.make CMakeFiles/section_export_tests_autogen.dir/build
+.PHONY : section_export_tests_autogen/fast
+
 beam_section_core_autogen/mocs_compilation.obj: beam_section_core_autogen/mocs_compilation.cpp.obj
 .PHONY : beam_section_core_autogen/mocs_compilation.obj
 
@@ -304,6 +353,30 @@ beam_section_gui_state_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_gui_state.dir\build.make CMakeFiles/beam_section_gui_state.dir/beam_section_gui_state_autogen/mocs_compilation.cpp.s
 .PHONY : beam_section_gui_state_autogen/mocs_compilation.cpp.s
 
+section_export_tests_autogen/mocs_compilation.obj: section_export_tests_autogen/mocs_compilation.cpp.obj
+.PHONY : section_export_tests_autogen/mocs_compilation.obj
+
+# target to build an object file
+section_export_tests_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/section_export_tests_autogen/mocs_compilation.cpp.obj
+.PHONY : section_export_tests_autogen/mocs_compilation.cpp.obj
+
+section_export_tests_autogen/mocs_compilation.i: section_export_tests_autogen/mocs_compilation.cpp.i
+.PHONY : section_export_tests_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+section_export_tests_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/section_export_tests_autogen/mocs_compilation.cpp.i
+.PHONY : section_export_tests_autogen/mocs_compilation.cpp.i
+
+section_export_tests_autogen/mocs_compilation.s: section_export_tests_autogen/mocs_compilation.cpp.s
+.PHONY : section_export_tests_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+section_export_tests_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/section_export_tests_autogen/mocs_compilation.cpp.s
+.PHONY : section_export_tests_autogen/mocs_compilation.cpp.s
+
 source/Core/PropertyCalculator.obj: source/Core/PropertyCalculator.cpp.obj
 .PHONY : source/Core/PropertyCalculator.obj
 
@@ -327,6 +400,54 @@ source/Core/PropertyCalculator.s: source/Core/PropertyCalculator.cpp.s
 source/Core/PropertyCalculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/PropertyCalculator.cpp.s
 .PHONY : source/Core/PropertyCalculator.cpp.s
+
+source/Core/SectionExport.obj: source/Core/SectionExport.cpp.obj
+.PHONY : source/Core/SectionExport.obj
+
+# target to build an object file
+source/Core/SectionExport.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/SectionExport.cpp.obj
+.PHONY : source/Core/SectionExport.cpp.obj
+
+source/Core/SectionExport.i: source/Core/SectionExport.cpp.i
+.PHONY : source/Core/SectionExport.i
+
+# target to preprocess a source file
+source/Core/SectionExport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/SectionExport.cpp.i
+.PHONY : source/Core/SectionExport.cpp.i
+
+source/Core/SectionExport.s: source/Core/SectionExport.cpp.s
+.PHONY : source/Core/SectionExport.s
+
+# target to generate assembly for a file
+source/Core/SectionExport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/SectionExport.cpp.s
+.PHONY : source/Core/SectionExport.cpp.s
+
+source/Core/SectionProjectIO.obj: source/Core/SectionProjectIO.cpp.obj
+.PHONY : source/Core/SectionProjectIO.obj
+
+# target to build an object file
+source/Core/SectionProjectIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/SectionProjectIO.cpp.obj
+.PHONY : source/Core/SectionProjectIO.cpp.obj
+
+source/Core/SectionProjectIO.i: source/Core/SectionProjectIO.cpp.i
+.PHONY : source/Core/SectionProjectIO.i
+
+# target to preprocess a source file
+source/Core/SectionProjectIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/SectionProjectIO.cpp.i
+.PHONY : source/Core/SectionProjectIO.cpp.i
+
+source/Core/SectionProjectIO.s: source/Core/SectionProjectIO.cpp.s
+.PHONY : source/Core/SectionProjectIO.s
+
+# target to generate assembly for a file
+source/Core/SectionProjectIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_core.dir\build.make CMakeFiles/beam_section_core.dir/source/Core/SectionProjectIO.cpp.s
+.PHONY : source/Core/SectionProjectIO.cpp.s
 
 source/GUI/FEMeshTab.obj: source/GUI/FEMeshTab.cpp.obj
 .PHONY : source/GUI/FEMeshTab.obj
@@ -592,6 +713,30 @@ source/GUI/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\beam_section_gui.dir\build.make CMakeFiles/beam_section_gui.dir/source/GUI/main.cpp.s
 .PHONY : source/GUI/main.cpp.s
 
+source/Tests/SectionExportTests.obj: source/Tests/SectionExportTests.cpp.obj
+.PHONY : source/Tests/SectionExportTests.obj
+
+# target to build an object file
+source/Tests/SectionExportTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/source/Tests/SectionExportTests.cpp.obj
+.PHONY : source/Tests/SectionExportTests.cpp.obj
+
+source/Tests/SectionExportTests.i: source/Tests/SectionExportTests.cpp.i
+.PHONY : source/Tests/SectionExportTests.i
+
+# target to preprocess a source file
+source/Tests/SectionExportTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/source/Tests/SectionExportTests.cpp.i
+.PHONY : source/Tests/SectionExportTests.cpp.i
+
+source/Tests/SectionExportTests.s: source/Tests/SectionExportTests.cpp.s
+.PHONY : source/Tests/SectionExportTests.s
+
+# target to generate assembly for a file
+source/Tests/SectionExportTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\section_export_tests.dir\build.make CMakeFiles/section_export_tests.dir/source/Tests/SectionExportTests.cpp.s
+.PHONY : source/Tests/SectionExportTests.cpp.s
+
 source/geometry/GeometryUtils.obj: source/geometry/GeometryUtils.cpp.obj
 .PHONY : source/geometry/GeometryUtils.obj
 
@@ -648,15 +793,19 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... beam_section_core_autogen
 	@echo ... beam_section_core_autogen_timestamp_deps
 	@echo ... beam_section_gui_autogen
 	@echo ... beam_section_gui_autogen_timestamp_deps
 	@echo ... beam_section_gui_state_autogen
 	@echo ... beam_section_gui_state_autogen_timestamp_deps
+	@echo ... section_export_tests_autogen
+	@echo ... section_export_tests_autogen_timestamp_deps
 	@echo ... beam_section_core
 	@echo ... beam_section_gui
 	@echo ... beam_section_gui_state
+	@echo ... section_export_tests
 	@echo ... beam_section_core_autogen/mocs_compilation.obj
 	@echo ... beam_section_core_autogen/mocs_compilation.i
 	@echo ... beam_section_core_autogen/mocs_compilation.s
@@ -666,9 +815,18 @@ help:
 	@echo ... beam_section_gui_state_autogen/mocs_compilation.obj
 	@echo ... beam_section_gui_state_autogen/mocs_compilation.i
 	@echo ... beam_section_gui_state_autogen/mocs_compilation.s
+	@echo ... section_export_tests_autogen/mocs_compilation.obj
+	@echo ... section_export_tests_autogen/mocs_compilation.i
+	@echo ... section_export_tests_autogen/mocs_compilation.s
 	@echo ... source/Core/PropertyCalculator.obj
 	@echo ... source/Core/PropertyCalculator.i
 	@echo ... source/Core/PropertyCalculator.s
+	@echo ... source/Core/SectionExport.obj
+	@echo ... source/Core/SectionExport.i
+	@echo ... source/Core/SectionExport.s
+	@echo ... source/Core/SectionProjectIO.obj
+	@echo ... source/Core/SectionProjectIO.i
+	@echo ... source/Core/SectionProjectIO.s
 	@echo ... source/GUI/FEMeshTab.obj
 	@echo ... source/GUI/FEMeshTab.i
 	@echo ... source/GUI/FEMeshTab.s
@@ -702,6 +860,9 @@ help:
 	@echo ... source/GUI/main.obj
 	@echo ... source/GUI/main.i
 	@echo ... source/GUI/main.s
+	@echo ... source/Tests/SectionExportTests.obj
+	@echo ... source/Tests/SectionExportTests.i
+	@echo ... source/Tests/SectionExportTests.s
 	@echo ... source/geometry/GeometryUtils.obj
 	@echo ... source/geometry/GeometryUtils.i
 	@echo ... source/geometry/GeometryUtils.s

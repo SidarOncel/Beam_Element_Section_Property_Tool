@@ -8,6 +8,10 @@ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/beam_section_core_autoge
  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/CMakeFiles/4.3.3/CMakeSystem.cmake
  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.cpp
  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.hpp
+ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.cpp
+ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.hpp
+ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.cpp
+ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.hpp
  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/GeometryUtils.cpp
  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/GeometryUtils.hpp
  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionBase.cpp

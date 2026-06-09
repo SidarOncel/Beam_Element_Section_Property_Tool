@@ -7,6 +7,10 @@ beam_section_core_autogen/timestamp: C:/Users/ZUMRA/Beam_Element_Section_Propert
   CMakeFiles/4.3.3/CMakeSystem.cmake \
   C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.cpp \
   C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.hpp \
+  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.cpp \
+  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.hpp \
+  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.cpp \
+  C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.hpp \
   C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/GeometryUtils.cpp \
   C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/GeometryUtils.hpp \
   C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionBase.cpp \
@@ -409,8 +413,6 @@ C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
 
-C:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake:
-
 C:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
@@ -429,15 +431,11 @@ C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFileCXX.cmake:
 
-C:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake:
+C:/msys64/ucrt64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
+C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
+C:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
 
@@ -458,8 +456,6 @@ C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relw
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets-relwithdebinfo.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 
@@ -511,6 +507,10 @@ C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
 
+C:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake:
+
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.hpp:
+
 C:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake:
@@ -537,37 +537,25 @@ CMakeFiles/4.3.3/CMakeCXXCompiler.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJp2PluginTargetsPrecheck.cmake:
 
-C:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
-
 C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+C:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
+C:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/Qt6Targets.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicGitHelpers.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake:
 
@@ -591,43 +579,23 @@ C:/msys64/ucrt64/bin/cmake.exe:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake:
 
+C:/msys64/ucrt64/lib/cmake/Qt6/Qt6Targets.cmake:
+
 C:/msys64/ucrt64/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
+
+C:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake:
-
-C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/CMakeLists.txt:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/Qt6Dependencies.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-relwithdebinfo.cmake:
-
-C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtFeature.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake:
 
@@ -642,6 +610,34 @@ C:/msys64/ucrt64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 C:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtFeature.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/FindWrapAtomic.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake:
+
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/CMakeLists.txt:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/Qt6Dependencies.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
@@ -673,9 +669,25 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeMinGWFindMake.cmake:
 
-C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.hpp:
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicGitHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake:
+
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.hpp:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake:
+
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionProjectIO.cpp:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake:
+
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/PropertyCalculator.hpp:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake:
 
@@ -685,17 +697,39 @@ C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionBase.hp
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake:
 
+C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/Core/SectionExport.cpp:
+
 CMakeFiles/4.3.3/CMakeSystem.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:
 
 C:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source/geometry/SectionBase.cpp:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/FindWrapAtomic.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets-relwithdebinfo.cmake:
+
+C:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
+
+C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake:
 
@@ -706,12 +740,6 @@ C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-relwithdebinfo.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
@@ -739,17 +767,7 @@ C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cm
 
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake:
-
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
-
-C:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
-
-C:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake:
-
-C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 
@@ -757,15 +775,15 @@ C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicTestHelpers.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake:
+C:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake:
 
-C:/msys64/ucrt64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
+C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake:
 
@@ -895,8 +913,6 @@ C:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeFindDependencyMacro.cmake:
 
-C:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake:
-
 C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake:
 
 C:/msys64/ucrt64/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
@@ -988,7 +1004,3 @@ C:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake:
 C:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake:
 
 C:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in:
-
-C:/msys64/ucrt64/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
-
-C:/msys64/ucrt64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:

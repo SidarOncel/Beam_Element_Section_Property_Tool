@@ -199,6 +199,6 @@ void FEMeshTab::updateStatus()
         return;
     }
 
-    m_statusLabel->setText(QStringLiteral("Mesh module unavailable. Controls are placeholders."));
+    m_statusLabel->setText(QStringLiteral("Adjust mesh size and click 'Generate Mesh.'"));
     m_statusLabel->setStyleSheet(QStringLiteral("color: #6f7682;"));
 }
