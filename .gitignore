@@ -1,1 +1,8 @@
 build-mac/
+build/
+*.exe
+compile_*.txt
+*.obj
+*.o
+*.a
+

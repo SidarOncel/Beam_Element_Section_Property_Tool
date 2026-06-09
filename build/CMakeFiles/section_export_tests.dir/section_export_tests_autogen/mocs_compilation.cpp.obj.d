@@ -1,2 +1,0 @@
-CMakeFiles/section_export_tests.dir/section_export_tests_autogen/mocs_compilation.cpp.obj: \
- C:\Users\ZUMRA\Beam_Element_Section_Property_Tool\build\section_export_tests_autogen\mocs_compilation.cpp

@@ -1,1 +1,0 @@
--IC:/Users/ZUMRA/Beam_Element_Section_Property_Tool/build/beam_section_gui_autogen/include -IC:/Users/ZUMRA/Beam_Element_Section_Property_Tool/source -isystem C:/msys64/ucrt64/include/qt6/QtWidgets -isystem C:/msys64/ucrt64/include/qt6 -isystem C:/msys64/ucrt64/include/qt6/QtCore -isystem "C:/msys64/ucrt64/share/qt6/mkspecs/win32-g++" -isystem C:/msys64/ucrt64/include/qt6/QtGui
