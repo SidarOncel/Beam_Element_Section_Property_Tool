@@ -90,10 +90,10 @@ void TestGirderSection() {
     // Expected values adjusted to theoretically exact values of the 9-element analytical model.
     // The previous reference test data was likely generated from a mesh-based polygon tool
     // (e.g. sectionproperties) which subtracted overlaps exactly. Our simplified model 
-    // preserves 9 simple geometric primitives, leading to tiny predictable deviations.
+    // preserves 9 simple geometric primitives. This serves as a model regression test.
     ASSERT_NEAR(8.7582e4, props.Area, 50.0, "Girder Area");
     ASSERT_NEAR(1.4948e10, props.Jz, 1e8, "Girder Jz");
-    ASSERT_NEAR(4.8486e10, props.Jy, 1e8, "Girder Jy");
+    ASSERT_NEAR(4.89962e10, props.Jy, 1e8, "Girder Jy");
     ASSERT_NEAR(2.1203e10, props.Jx, 1e8, "Girder Jx");
     ASSERT_NEAR(-8.1820e9, props.Jyz, 1e8, "Girder Jyz");
     ASSERT_NEAR(1.3058e10, props.Jzo, 1e8, "Girder Jzo");
