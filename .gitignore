@@ -1,1 +1,28 @@
 build-mac/
+# Build directory
+build/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# Qt
+.qt/
+*.user
+*.qtc_clangd
+
+# Executables
+*.exe
+
+# Libraries
+*.a
+*.dll
+*.so
+*.lib
+
+# Object files
+*.o
+*.obj

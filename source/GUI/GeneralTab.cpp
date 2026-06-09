@@ -58,6 +58,36 @@ void GeneralTab::setInputChangedCallback(std::function<void(const SectionInput&)
     m_inputChangedCallback = std::move(callback);
 }
 
+void GeneralTab::setSectionInput(const SectionInput& input)
+{
+    // This function is used when the project is loaded from disk.
+    // The goal is to push the loaded values back into the GUI controls
+    // so the General tab matches the current project state.
+
+    m_isUpdating = true;
+
+    // Store the new input in the section state first.
+    m_state.setInput(input);
+
+    // Keep the section type combo box synchronized with the loaded input.
+    const int comboIndex = m_sectionTypeCombo->findData(
+        static_cast<int>(input.type));
+
+    if (comboIndex >= 0)
+    {
+        m_sectionTypeCombo->setCurrentIndex(comboIndex);
+    }
+
+    // Rebuild the form because different section types have different fields.
+    rebuildParameterForm();
+
+    // Let normal updates run again.
+    m_isUpdating = false;
+
+    // Refresh the preview, validation message, and property table.
+    updateWorkflow();
+}
+
 SectionShape GeneralTab::getCurrentShape() const
 {
     return PreviewShapeAdapter::createShape(m_state.input());

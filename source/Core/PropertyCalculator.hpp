@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../geometry/SectionInput.hpp"
+#include "../Geometry/SectionInput.hpp"
 #include <cmath>
 
 // SectionProperties struct as defined in Member2_Plan.md Phase 1

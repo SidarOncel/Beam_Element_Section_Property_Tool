@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../geometry/SectionInput.hpp"
-#include "../geometry/SectionShape.hpp"
+#include "../Geometry/SectionInput.hpp"
+#include "../Geometry/SectionShape.hpp"
 
 #include <vector>
 
